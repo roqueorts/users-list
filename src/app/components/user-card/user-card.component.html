@@ -1,0 +1,21 @@
+<div class="card-body border border-grey rounded">
+  <img [src]="user.avatar" alt="" class="img-fluid rounded-circle w-100 mb-3" />
+
+  {{ user.first_name }}
+  <hr />
+  <p>{{ user.last_name }}</p>
+  <hr />
+  <p>{{ user.email }}</p>
+  <button (click)="seeUser()" type="button" class="btn  btn-outline-primary btn-block">Details</button>
+  <div class="d-flex justify-content-center">
+    <div class="p-4">
+      <a href="http://facebook.com"> <i class="fab fa-facebook"></i> </a>
+    </div>
+    <div class="p-4">
+      <a href="http://twitter.com"> <i class="fab fa-twitter"></i> </a>
+    </div>
+    <div class="p-4">
+      <a href="http://instagram.com"> <i class="fab fa-instagram"></i> </a>
+    </div>
+  </div>
+</div>

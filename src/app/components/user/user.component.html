@@ -1,0 +1,11 @@
+<h1 class="row animated fadeIn">{{ user.first_name | uppercase }} {{ user.last_name | uppercase }}</h1>
+<hr />
+
+<div class="row animated fadeIn fast">
+  <div class="col-md-4">
+    <img [src]="user.avatar" class="img-fluid" [alt]="user.first_name" />
+    <br /><br />
+    <p>{{ user.email }}</p>
+    <a [routerLink]="['/home']" class="btn btn-outline-danger btn-block">Back to users list...</a>
+  </div>
+</div>
