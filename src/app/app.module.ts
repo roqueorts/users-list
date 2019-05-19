@@ -9,10 +9,12 @@ import { HomeComponent } from './components/home/home.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, UsersListComponent, UserComponent, HomeComponent, UserCardComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [MatPaginatorModule, BrowserAnimationsModule, BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })

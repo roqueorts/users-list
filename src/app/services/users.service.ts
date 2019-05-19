@@ -13,8 +13,8 @@ export class UsersService {
   /**
    * getUsers from BACKEND
    */
-  public getUsers(page: string): Observable<UserModel[]> {
-    return this.http.get<UserModel[]>('https://reqres.in/api/users');
+  public getUsers(key$: number): Observable<UserModel[]> {
+    return this.http.get<UserModel[]>(`https://reqres.in/api/users?page=${key$}`);
   }
 
   getUser(key$: string): Observable<UserModel> {

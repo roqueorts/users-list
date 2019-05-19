@@ -9,12 +9,11 @@ import { UserModel } from 'src/app/models/user';
 })
 export class UserCardComponent implements OnInit {
   @Input() user: UserModel;
-  @Input() indice: number;
+  @Input() id: number;
   constructor(private router: Router) {}
 
   ngOnInit() {}
   seeUser() {
-    this.router.navigate(['/user', this.indice + 1]);
-    // console.log(this.indice);
+    this.router.navigate(['/user', this.id]);
   }
 }
